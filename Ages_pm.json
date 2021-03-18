@@ -1,0 +1,1609 @@
+{
+	"info": {
+		"_postman_id": "8926b358-e6f1-46b7-9e19-8925a1fa5d17",
+		"name": "Age",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Europe",
+			"item": [
+				{
+					"name": "age_europe_-1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('-1');\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "-1",
+									"description": "invalid value",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('0');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"underage\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('1');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"underage\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_16",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('16');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"underage\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "16",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_17",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('17');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"underage\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "age",
+								"value": "17",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "17",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_18",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('18');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"adult\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(17);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "age",
+								"value": "17",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "18",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_19",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('19');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"adult\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(17);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "19",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_49",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('49');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"adult\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(17);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "49",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_50",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('50');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"antiquity\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_51",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('51');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"antiquity\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "51",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_99",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('99');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"antiquity\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "99",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_100",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('100');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"antiquity\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_europe_101",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_europe', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('101');\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "101",
+									"description": "invalid value",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_europe",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_europe"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USA",
+			"item": [
+				{
+					"name": "age_usa_-1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('-1');\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "-1",
+									"description": "invalid value",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('0');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"underage\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('1');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"underage\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_19",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('19');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"underage\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "19",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_20",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('20');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"underage\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_21",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('21');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"adult\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(17);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "age",
+								"value": "17",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "21",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_22",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('22');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"adult\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(17);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "age",
+								"value": "17",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "22",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_49",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('49');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"adult\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(17);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "49",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_50",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('50');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"antiquity\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_51",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('51');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"antiquity\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "51",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_99",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('99');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"antiquity\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "99",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_100",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('100');\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age_type).to.eql(\"antiquity\");\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.content.length).to.eql(8);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "age_usa_101",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test('age_usa', function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql('101');\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "age",
+									"value": "101",
+									"description": "invalid value",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "116.203.27.46:5002/age_usa",
+							"host": [
+								"116",
+								"203",
+								"27",
+								"46"
+							],
+							"port": "5002",
+							"path": [
+								"age_usa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
