@@ -41,12 +41,6 @@
 									"value": "-1",
 									"description": "invalid value",
 									"type": "text"
-								},
-								{
-									"key": "",
-									"value": "",
-									"type": "text",
-									"disabled": true
 								}
 							]
 						},
